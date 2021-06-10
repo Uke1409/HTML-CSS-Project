@@ -1,85 +1,157 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Info on "Naruto"</title>
-        <style>
-            /*Font*/
-            body {
-            background:rgb(163, 255, 184);
-            font-family: "Times New Roman", Times, serif;
-            }
-            /*Heading*/
-            h1 {
-            text-align:center;
-            font-size: 50px;
-            }
-            /*credit*/
-            h2 {
-            text-align:center;
-            }
-            /*Pic Size*/
-            .picture {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-            }
-            /*The Words (Main Part)*/
-            #homePageIntro {
-            font-size: 24px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 75%;
-            }
-/* Black background color to the top bar */
-            .topnav {
-             background-color: black;
-             overflow: hidden;
-            }
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a:link {
+  text-decoration: none;
+}
 
-/* Color of links inside the top bar */
-            .topnav a {
-             float: left;
-             color: white;
-             text-align: center;
-             padding: 14px 16px;
-             text-decoration: none;
-             font-size: 17px;
-            }
+a:visited {
+  text-decoration: none;
 
-/* Color of links when hovering mouse over */
-            .topnav a:hover {
-             background-color: white;
-             color: black;
-            }
+  color: rgb(255, 255, 255);
+}
 
-/* Color of the Home Link*/
-            .topnav a.active {
-             background-color: orange;
-             color: white;
-            }
-        </style>
-    </head>
-    <body>
-        
-    <div class="topnav">
-        <a class="active" href="Index.html">Home</a>
-        <a href="Character_Backgrounds.html">Character Backgrounds</a>
-        <a href="Character_Influences.html">Character Influences</a>
-        <a href="Easter_Eggs.html">Easter Eggs</a>
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 25px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://static3.cbrimages.com/wordpress/wp-content/uploads/2020/01/Naruto.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("https://pm1.narvii.com/6565/f37b65c335015d69061b190197b0950c1fdb6385_hq.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("https://vignette.wikia.nocookie.net/vsbattles/images/8/85/Jiraiya2.png/revision/latest?cb=20131126034822");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("https://assets.jalantikus.com/assets/cache/738/460/userfiles/2019/10/24/easter-egg-naruto-1-ee9bb.jpg");
+  min-height: 400px;
+}
+
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for mobile devices*/
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">Welcome</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Some info on the anime "Naruto"</h3>
+  <p id = "homePageIntro">Look up! Do you know who this is? This guy is known as one of the most iconic anime characters of all time! 
+    His show is called “Naruto.” This website will be about <strong>distinctive</strong> character backstories, urban legends and historical 
+    figures who have influenced the backgrounds of characters, and hidden easter eggs in the show. By the time I finish, you'll want to
+    rewatch Naruto 17 times. Believe it!
+ </p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #ffffff;"><a href = "Character_Backgrounds.html">
+    Character Backgrounds</a></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p><a href="Character_Backgrounds.html">Click for "Character Backgrounds"</a></p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><a href = "Character_Influences.html">
+    Character Influences</a></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p><a href = "Character_Influences.html">Click for "Character Influences"</a></p>
+  </div>
+</div>
+
+<div class="bgimg-4">
+    <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><a href = "Easter_Eggs.html">
+        Easter Eggs</a></span>
     </div>
-    <h1 id = "homepage">Some info on the Anime "Naruto"</h1>
-    <h2>This website was made by Luke Kim</h2>
-    <a><img src = "https://static3.cbrimages.com/wordpress/wp-content/uploads/2020/01/Naruto.jpg" class = "picture"></a>
-        
-    
-        <p id = "homePageIntro">Look up! Do you know who this is? This guy is known as one of the most iconic anime characters of all time! 
-           His show is called “Naruto.” This website will be about <strong>distinctive</strong> character backstories, urban legends and historical 
-           figures who have influenced the backgrounds of characters, and hidden easter eggs in the show. By the time I finish, you'll want to
-           rewatch Naruto 17 times. Believe it!
-        </p>
+  </div>
+  
+  <div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p><a href = "Easter_Eggs.html">Click for "Easter Eggs"</a></p>
+    </div>
+  </div>
 
-    </body>
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">THANKS!</span>
+  </div>
+</div>
+
+</body>
 </html>
